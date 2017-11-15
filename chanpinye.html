@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>雄山传奇</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/newrest.css">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<style>
+		body{
+			position: relative;
+		}
+		.bgtwo{
+			position: absolute;
+			width: 632px;
+			height: 504px;
+		   background:#FF9AFF url(img/产品页/左上角图案-min.png) ; 
+		}
+		.bgthree{
+			position: absolute;
+			right: 0;
+			top:732px; 
+			width: 286px;
+			height: 300px;
+		   background:#FF9AFF url(img/产品页/右边的图案-min.png) ; 
+		}	
+		.chanpinone{
+			padding-top: 80px;
+			margin-bottom: 60px;
+		}
+		.chanpintitle{
+			width: 100%;
+			text-align: center;
+			z-index: 999;
+		}
+		.chanpintitle h2 img{
+			 background: #DB2A2A;
+			 margin-right: 15px;
+		}
+	  /*chanpintwo  改成flex**********************/
+	  .tabmune{
+			margin-left: 30%;
+			margin-bottom: 40px;
+	  	    }
+	  .tabmune li{
+		    display: inline-block;
+			width:150px;
+			height: 45px;
+			background: #eeeeee; 
+			font-size: 16px;
+			line-height: 45px;
+			text-align: center;
+			color: #999999;
+			margin-left: 20px;
+
+	  }
+	   .tabmune li.active{
+	  	 background-color: #0377DA;
+	  	 color: #fff;
+	  }
+	   .tabmune li:hover{
+	   	cursor: pointer;
+	   }
+	  /*chanpinthree*/
+	  .chanpinthree{
+	  	 margin-top: 100px;
+	  }
+	  .chanpinthree h2{
+		padding-top: 100px;
+	  }
+	  .chanpinthree h2 img{
+			 background: #DB2A2A;
+			 margin-right: 15px;
+		}
+	  .graycolor{
+	  	 background-color: #f5f5f5;
+
+	  }
+	  .bg{
+	  	   background: #FF9AFF;;
+	  }
+	  .pone{
+	  	 padding-left: 80px;
+	  }
+	  .ptwo{
+	  	 padding-right: 80px;
+	  }
+
+		/*没有小于768px，是因为Bootstrap3以移动端优先设计*/
+@media (max-width: 480px) {
+	   .chanpinone{
+			padding-top: 60px;
+		}
+	   .chanpintitle{
+			height: 26px;	
+		}
+		.chanpintitle h2{		
+			margin: 0;
+			margin-top: 10px;
+		}
+		.chanpintitle h2 img{
+			width: 32px;
+			height: 32px;
+
+		}
+		.chanpintitle h2{
+			font-family:  "Microsoft YaHei";
+			color: #333333;
+			font-size: 18px;
+			font-weight: 100;
+		}	
+		/**/
+		/*p )*/
+		.chanpinone p{
+		 margin-bottom: 10px;
+		 font-size: 13px;
+	  }
+		/*************************/
+	   .tabmune{
+				margin-left:0px;
+	  	    }
+	  .tabmune li{
+			width:110px;
+			height: 35px;
+			font-size: 13px;
+			line-height: 35px;
+			margin-bottom: 5px;
+			margin-left: 10px;
+	  }
+	  /*chanpinthree*/
+	   .chanpinthree{
+	  	 margin-top: 5px;
+	  }
+	  .chanpinthree h2{
+		padding-top: 10px;
+	  }
+		.pone{
+	  	 padding-left: 5px;
+	   }
+		  .ptwo{
+		   	 padding-right: 5px;
+		  }
+
+}
+	</style>
+</head>
+<body>
+ <div class="bgtwo">	
+ </div>
+ <div class="bgthree">	
+ </div>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand logo" style="padding:0;"><img src="img/首页/logo-min.png" alt="" ></a>
+			
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-right" style="margin-top:0">
+				<li ><a href="#"> 首页</a></li>
+				<li class="active"><a href="server.html" style="color: #EFAB00">产品</a></li>
+				<li><a href="#">解决方案</a></li>
+				<li><a href="server.html"> 服务</a></li>
+				<li><a href="news.html"> 新闻</a></li>
+				<li><a href="aboutus.html">关于我们</a></li>
+			</ul>	
+		</div>
+	</div>
+</nav> 
+	<div class="chanpinone">
+	
+		<div class="chanpintitle ">
+			<h2><img src="img/产品页/数据交换平台-min.png" alt="">SAP Business One</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pad80 ">
+					<p>
+						气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。
+					</p>
+					<p>气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bg ">
+					<img src="img/产品页/sap右侧图-min.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="chanpintwo">
+		<div class="chanpintwotit ">
+			<div class="tabmune">
+				<ul>
+					<li>高校实训基地建设</li>
+					<li>疑问与实践</li>
+					<li class="active">企业信息化</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+			    <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12  ">
+					<img src="img/产品页/企业信息化.jpg" alt="">
+				</div>
+				 <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12  " style="padding-top: 60px">
+					<p>
+						气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。
+					</p>
+					<p>气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。</p>
+					<p>气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="chanpinthree">
+		<div class="container-fluid">
+			<div class="row graycolor">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 "style="padding-left: 0px;padding-right: 0px">
+					<img src="img/产品页/数据交换平台.jpg" alt="">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  " style="padding-left: 0px;padding-right: 0px">
+					<h2 style="margin-left: 80px;"><img src="img/产品页/数据交换平台-min.png" alt="">数据交换平台</h2>
+					<p class="pone">
+						气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。
+					</p>
+				</div>
+			</div>
+			<div class="row graycolor">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  " >
+				<h2 ><img src="img/产品页/数据交换平台-min.png" alt="">OA/CRM</h2>
+					<p class="ptwo">
+						气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。
+					</p>
+					
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 "style="padding-left: 0px;padding-right: 0px">
+					<img src="img/产品页/oa-crm.jpg" alt="">
+				</div>
+			</div>
+			<div class="row graycolor">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 " style="padding-left: 0px;padding-right: 0px">
+					<img src="img/产品页/电商平台.jpg" alt="">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  " style="padding-left: 0px;padding-right: 0px">
+					<h2 style="margin-left: 80px;"><img src="img/产品页/数据交换平台-min.png" alt="">电商平台</h2>
+					<p class="pone">
+						气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="footer">
+<div class="footercontain">
+	<div class="footerleft">
+		<ul>
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+		<ul class="xs-hidden">
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+		<ul class="xs-hidden">
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+		<ul class="xs-hidden md-hidden">
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+		<ul class="xs-hidden md-hidden">
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+	</div>
+	<div class="footerright ">
+		     <div class="chatus ">
+				<p>关注我们</p>
+				<p>888-888888</p>
+				<div class="iconlist">
+					<ul>
+						<li><a href="#"><img src="img/首页/facebook-min.png" alt=""></a></li>
+						<li><a href="#"><img src="img/首页/g+-min.png" alt=""></a></li>
+						<li><a href="#"><img src="img/首页/qq-min.png" alt=""></a></li>
+						<li><a href="#"><img src="img/首页/weibo-min.png" alt=""></a></li>
+						<li ><a href="#" style="background-color: #EFAB00"><img src="img/首页/WEIXIN-min.png" alt=""></a></li>
+						<li><a href="#"><img src="img/首页/twitter-min.png" alt=""></a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="erweima">
+				<img src="img/erweima.png" alt="">
+			</div>
+			
+	</div>
+	
+</div>
+	
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+</body>
+</html>

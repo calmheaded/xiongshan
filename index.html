@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>雄山传奇</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/newrest.css">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+<style>
+	.casecon{
+		width: 100%;
+		position: relative;
+		height:350px;
+		background:#0372D8;
+		margin-top: 100px;
+        display: flex;
+	    flex-direction:row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+		}
+	.caseconlist{
+		width: 1200px;
+		position: absolute;
+		top: -100px;
+		padding: 0px;	
+
+	}
+	.case{
+		 float: left;
+		 margin-left: 20px;
+		 width: 275px;		
+		 height: 350px;
+		 position: relative;
+			}
+	.case h2{
+		 position: absolute;
+		 bottom: 0px;
+		 background: #FFFFFF;
+		 text-align: center;
+		 height: 50px;
+		 line-height: 50px;
+		 width: 100%;
+	}
+	.casemark {	
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background:#E7AD1C url(img/首页/查看更多-min.png) center center no-repeat ; 
+		   opacity: 0;
+		}
+	.casemark a{
+		position: absolute;
+		left: 40%;
+		top: 60%;
+		font-size: 16px;
+		color: #eee;
+	}
+	.case:hover .casemark {
+ 		opacity: 0.85;	
+	}
+	@media (max-width: 479px) {
+		
+	.casecon{
+		height:450px;
+		margin-top: 50px;
+		}
+	.caseconlist{		
+		width: 100%;
+		top: -50px;
+	}
+	.case{
+		 float: left;
+		 margin-left: 15px;
+		 width: 44%;		
+		 height: 230px;
+		 z-index: 999;
+			}
+	.case h2{
+		 height: 35px;
+		 line-height: 35px;
+	  	 font-size: 18px;
+	}
+	.casemark a{
+		left: 34%;
+		font-size: 14px;		
+	}
+	}
+	@media (min-width: 480px) and (max-width: 767px) {
+			.casecon{
+			   height:250px;
+			   margin-top: 50px;
+			 }
+		.caseconlist{		
+			 width: 100%;
+			 top: -50px;
+		}
+		.case{
+			 float: left;
+			 margin-left: 18px;
+			 width: 22%;		
+			 height: 230px;
+			 z-index: 999;
+				}
+		.case h2{
+			 height: 35px;
+			 line-height: 35px;
+		  	 font-size: 18px;
+		  	  position: absolute;
+		      bottom: 0px;
+		 }
+		.casemark a{
+			left: 34%;
+			font-size: 14px;		
+		}
+	}
+</style>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand logo" style="padding:0;"><img src="img/首页/logo-min.png" alt="" ></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-right" id="ul1">
+			    <li id="mark"></li>
+				<li  class="active" ><a href="index.html" style="color: #EFAB00"> 首页</a></li>
+				<li><a href="server.html">产品</a></li>
+				<li><a href="#">解决方案</a></li>
+				<li><a href="#">服务</a></li>
+				<li><a href="news.html"> 新闻</a></li>
+				<li><a href="aboutus.html">关于我们</a></li>
+			</ul>	
+		</div>
+	</div>
+</nav>
+<!-- banner -->
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active" style="background:#223240">
+			<img  src="img/首页/banner1.jpg" alt="第一张">
+			<div class="carousel-caption">
+							<p class="xs-hidden ">SAP Business One</p>
+							 <p class="xs-hidden ">您身边的快捷助手</p>
+		                    <!--   <p><a class="btn btn-lg btn-success" href="#"
+								  role="button" target="_blank">点击了解</a></p>-->
+			</div>
+		</div>
+		<div class="item" style="background:#F5E4DC;">
+			<img src="img/首页/banner2.jpg" alt="第二张">
+		</div>
+		<div class="item" style="background:#DE2A2D;">
+			<img src="img/首页/banner3.jpg" alt="第三张">
+		</div>
+	</div>
+	<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a href="#myCarousel" data-slide="next" class="carousel-control right">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+<div class="index_one">
+	<div class="index_oneTitle ">
+		<h2><img src="img/首页/关于雄山-min-1.png" alt="">关于雄山</h2>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  padright60" >
+				<img src="img/首页/关于雄山配图.jpg" alt="">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-5  col-xs-12  col-md-offset-0.5 ">
+				<p>
+					气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。
+				</p>
+				<p>
+					气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。
+				</p>
+				<p>
+					气候学家指出我们的生活方式给环境带来严重的危机，我们团队意识到这个问题并且坚定信念要把对环境的影响最小化。饮食健康从溯源做起，这也意味着我们的产品没有农药残留和有害重金属污染。
+				</p>
+				<a href="" class="btn">提交</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="page_two" >
+	  <div class="index_oneTitle">
+    	<h2><img src="img/首页/产品与案例-min.png" alt="">产品与案例</h2>
+      </div> 
+    <div class="casecon">
+    	<div class="caseconlist">
+    		<div class="case">
+    			<img src="img/首页/sap.jpg" alt="">
+    			<h2>数据交互平台</h2>
+    			<div class="casemark">
+    				<a href="#">查看更多</a>
+    			</div>
+    		</div>
+    		<div class="case">
+    			<img src="img/首页/sap.jpg" alt="">
+    			<h2>数据交互平台</h2>
+    			<div class="casemark">
+    				<a href="#">查看更多</a>
+    			</div>
+    		</div>
+    		<div class="case">
+    			<img src="img/首页/sap.jpg" alt="">
+    			<h2>数据交互平台</h2>
+    			<div class="casemark">
+    				<a href="#">查看更多</a>
+    			</div>
+    		</div>
+    		<div class="case">
+    			<img src="img/首页/sap.jpg" alt="">
+    			<h2>数据交互平台</h2>
+    			<div class="casemark">
+    				<a href="#">查看更多</a>
+    			</div>
+    		</div>
+    	</div>
+
+    </div> 
+</div>
+<div class="page_three">
+	  <div class="index_oneTitle newtit">
+    	<h2><img src="img/首页/新闻中心-min.png" alt="中心">新闻中心</h2>
+
+      </div> 
+    	  <div class="container ">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  padright60"  >
+				    <img src="img/首页/新闻中心配图.jpg" alt="">
+				    <h2 class="newstitle">来得及案件覅大家哦啊低价的</h2>
+				  </div>
+				<div class="col-lg-6 col-md-6 col-sm-5  col-xs-12   ">
+					
+				       <div class="newscontain">
+				       	<div class="newsli">				       		
+				       			<li>9103-33-3</li>
+				       			<li>9103-33-3</li>
+				       			<li>9103-33-3</li>
+				       			<li>9103-33-3</li>				       		
+				       	</div>
+				       	<div class="newsmain">
+				       		<div class="news">
+								<h2>我国广告投入和任何个人故事</h2>
+								<p>候学家指出我们的生活方式给环境带来严重的危机，我们团队意识</p>
+							</div>  
+							<div class="news">
+								<h2>我国广告投入和任何个人故事</h2>
+								<p>候学家指出我们的生活方式给环境带来严重的危机，我们团队意识</p>
+							</div>  
+							<div class="news">
+								<h2>我国广告投入和任何个人故事</h2>
+								<p>候学家指出我们的生活方式给环境带来严重的危机，我们团队意识</p>
+							</div>  
+							<div class="news">
+								<h2>我国广告投入和任何个人故事</h2>
+								<p>候学家指出我们的生活方式给环境带来严重的危机，我们团队意识</p>
+							</div> 
+				       	</div>
+				       </div>
+				</div>	
+				</div>
+    </div>
+</div>
+<div class="footer">
+<div class="footercontain">
+	<div class="footerleft">
+		<ul>
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+		<ul class="xs-hidden">
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+		<ul class="xs-hidden">
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+		<ul class="xs-hidden md-hidden">
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+		<ul class="xs-hidden md-hidden">
+			<h2>这是标题题</h2>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+			<li>关务我们</li>
+		</ul>
+	</div>
+	<div class="footerright ">
+		     <div class="chatus ">
+				<p>关注我们</p>
+				<p>888-888888</p>
+				<div class="iconlist">
+					<ul>
+						<li><a href="#"><img src="img/首页/facebook-min.png" alt=""></a></li>
+						<li><a href="#"><img src="img/首页/g+-min.png" alt=""></a></li>
+						<li><a href="#"><img src="img/首页/qq-min.png" alt=""></a></li>
+						<li><a href="#"><img src="img/首页/weibo-min.png" alt=""></a></li>
+						<li ><a href="#" style="background-color: #EFAB00"><img src="img/首页/WEIXIN-min.png" alt=""></a></li>
+						<li><a href="#"><img src="img/首页/twitter-min.png" alt=""></a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="erweima">
+				<img src="img/erweima.png" alt="">
+			</div>
+			
+	</div>
+	
+</div>
+	
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+</body>
+</html>
